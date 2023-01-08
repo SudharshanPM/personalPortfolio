@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sudharshan</title>
+	<link rel="stylesheet" type="text/css" href="portfolio.css">
+	<link rel = "icon" href = "logo.png" type = "image/x-icon">
+	<script src="https://kit.fontawesome.com/c9a841fedc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="image-section">
+		<img src="sudharshan.png">
+	</div>
+	<div id="header">
+		<div class="container">
+			<nav>
+				<img src="portfolio.png" class="logo">
+				<ul>
+					<li class="home"><a href="#header">Home</a></li>
+					<li class="about"><a href="#about">About</a></li>
+					<li class="services"><a href="#services">Services</a></li>
+					<li class="portfolio"><a href="#portfolio">Portfolio</a></li>
+					<li class="contact"><a href="#contact-me">Contact</a></li>
+				</ul>
+			</nav>
+			<div class="intro-text">
+				<h1>Hi, I'm <span>Sudharshan</span></h1>
+				<p>I'm a Front end developer</p>
+			</div>
+		</div>
+	</div>
+
+	<!-----about me----->
+	<div id="about">
+		<div class="container">
+				<div class="details">
+					<h1>About Me</h1>
+				</div>
+				<p class="info">
+					I hold a B.E degree from Meenakshi Sundararajan Engineering College.My specialties include quickly learning new skills<br>and programming languages. So far, I've learned Python, MySQL, HTML, CSS, Javascript, Google Analytics, and Google<br> Tag Manager. I'm still enthusiastically grabbing onto any other programming languages and frameworks I can integrate into<br> the coding web in my head. I completed my internship in digital analytics domain with following courses(MYSQL, HTML, <br>CSS, JAVASCRIPT, JQUERY, Google analytics, Google tag manager)at Cognizant.
+				</p>
+				<div class="title">
+					<p class="title-links" onclick="opentab('education')">Education</p>
+					<p class="title-links" onclick="opentab('skills')">Skills</p>
+					<p class="title-links" onclick="opentab('experience')">Experience</p>
+				</div>
+				<div class="contents active-tab" id="education">
+					<ul>
+						<li><span>2018-2022</span><br>Meenakshi Sundararajan Engineering College</li>
+						<li><span>2016-2018</span><br>Jawahar higher secondary school</li>
+						<li><span>2014-2016</span><br>Jawahar Vidyalaya senior secondary school</li>
+					</ul>
+				</div>
+				<div class="contents" id="skills">
+					<ul>
+						<li><span class="skill-set">Python</span></li>
+						<li><span class="skill-set">HTML</span></li>
+						<li><span class="skill-set">CSS</span></li>
+						<li><span class="skill-set">MySQL</span></li>
+						<li><span class="skill-set">Javascript</span></li>
+						<li><span class="skill-set">Google analytics</span></li>
+						<li><span class="skill-set">Google tag manager</span></li>
+					</ul>
+				</div>
+				<div class="contents" id="experience">
+					<ul>
+						<li><span>2022-Present</span><br>Worked as an intern in Cognizant</li>
+					</ul>
+				</div>
+		</div>
+	</div>
+
+	<!-----services section----->
+	<div id="services">
+		<div class="container">
+			<h1 class="sub-title">My Services</h1>
+			<div class="services-list">
+				<div>
+					<i class="fa-sharp fa-solid fa-globe"></i>
+					<h2>Web Design</h2>
+					<p>We provide the service of Web designing. We know how the web designing work and we can provide you with the best out of it.</p>
+				</div>
+				<div>
+					<i class="fa-solid fa-server"></i>
+					<h2>UI/UX Design</h2>
+					<p>We also provide the service of UI/UX Design. We know how the UI/UX design work and we can provide you with the best customer experience interface.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-----portfolio section----->
+	<div id="portfolio">
+		<div class="container">
+			<h1 class="sub-title">My Work</h1>
+			<div class="work-list">
+				<div class="work">
+					<img src="social media.png">
+					<div class="sub-content">
+					<h3>Social Media Web</h3>
+					<p>This Web connects you to the various people around the world.</p>
+					<a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+					</div>
+				</div>
+				<div class="work">
+					<img src="work-3.png">
+					<div class="sub-content">
+					<h3>Being Fashion</h3>
+					<p>Being fashion provides top quality products in the world.</p>
+					<a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!----Contact Me Section------>
+	<div id="contact-me">
+		<div class="container">
+			<div class="column">
+				<div class="column-left">
+					<h1 class="sub-title">Contact Me</h1>
+					<p><i class="fa-solid fa-envelope"></i>sudhar1771@gmail.com</p>
+					<p><i class="fa-sharp fa-solid fa-phone"></i>9791156690</p>
+					<div class="social-icons">
+						<a href="#"><i class="fa-brands fa-facebook"></i></a>
+						<a href="#"><i class="fa-brands fa-instagram"></i></a>
+						<a href="#"><i class="fa-brands fa-linkedin"></i></a>
+					</div>
+					<a href="Resume.pdf" download class="button-click" target="_blank">Download CV</a>
+				</div>
+				<div class="column-right">
+					<form>
+						<input type="text" name="Name" placeholder="Your Name" required><br><br>
+						<input type="email" name="email" placeholder="Your Email" required><br><br>
+						<textarea name="message" rows="6" placeholder="Your Message"></textarea><br><br>
+						<button type="submit" class="button-submit">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="portfolio.js"></script>
+</body>
+</html>

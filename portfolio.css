@@ -1,0 +1,512 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+
+body{
+	background: #080808;
+	color: white;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+.image-section{
+	float: right;
+	width: 45%;
+	height: 100%;
+}
+
+.image-section img{
+	width: 100%;
+	height: 91vh;
+	margin-top: 10%;
+}
+
+.logo{
+	display: inline;
+	width: 15%;
+	height: 30vh;
+	margin-top: -5%;
+	margin-left: -1%;
+}
+
+nav ul li{
+	display: inline-block;
+	margin: 10px 20px;
+	position: absolute;
+}
+
+nav ul li a{
+	text-decoration: none;
+	position: relative;
+	color: white;
+}
+
+.home{
+	right: 35%;
+	top: 2%;
+}
+
+.about{
+	right: 30%;
+	top: 2%;
+}
+
+.services{
+	right: 24%;
+	top: 2%;
+}
+
+.portfolio{
+	right: 18%;
+	top: 2%;
+}
+
+.contact{
+	right: 12%;
+	top: 2%;
+}
+
+nav ul li a::after{
+	content: '';
+	width: 0%;
+	height: 3px;
+	background: #ff004f;
+	position: absolute;
+	left: 2%;
+	bottom: -7px;
+	transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+	width: 100%;
+}
+
+.intro-text{
+	margin-top: 8%;
+	margin-left: 6%;
+	font-size: 30px;
+}
+
+.intro-text p{
+	animation: move 5s steps(30) infinite;
+	animation-direction: alternate-reverse;
+	overflow: hidden;
+	white-space: nowrap;
+	border-right: 3px solid whitesmoke;
+	margin-top: 1%;
+}
+
+@keyframes move
+{
+	0%
+	{
+		width: 0ch;
+	}
+	100%
+	{
+		width: 21.5ch;
+	}
+}
+
+/*-------About Me section----------*/
+
+#about{
+	padding: 80px 0;
+	margin-top: 30%;
+}
+
+.details h1{
+	font-size: 40px;
+	color: darkgrey;
+	text-align: center;
+}
+
+.info{
+	color: lightgrey;
+	font-size: 18px;
+	text-align: justify;
+	padding-top: 10px;
+	line-height: 140%;
+	margin-left: 20%;
+	position: relative;
+}
+
+#about .container .title p{
+	color: lightgrey;
+	font-size: 19px;
+	display: inline-block;
+	margin-right: 3%;
+	margin-top: 2%;
+	cursor: pointer;
+}
+
+.title{
+	text-align: center;
+}
+
+.title-links:hover{
+	text-decoration: underline;
+}
+
+.contents{
+	margin: 2% 0 0 40%;
+}
+
+.contents ul li{
+	color: lightgrey;
+	padding-bottom: 10px;
+	line-height: 140%;
+	font-size: 18px;
+}
+
+.contents ul li span{
+	color: #664400;
+}
+
+.contents ul .skill-set{
+	color: #664400;
+}
+
+.contents{
+	display: none;
+}
+
+.contents.active-tab{
+	display: block;
+}
+
+/*-------Services section-------*/
+#services{
+	padding: 30px 0;
+}
+
+.sub-title{
+	font-size: 40px;
+	color: darkgrey;
+	text-align: center;
+}
+
+.services-list{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+	grid-gap: 30px;
+	margin-top: 50px;
+}
+
+.services-list div{
+	background: #262626;
+	padding: 40px;
+	font-size: 17px;
+	font-weight: 300;
+	border-radius: 10px;
+	width: 70%;
+	margin-left: 15%;
+	transition: background 0.5s,transform 0.5s;
+}
+
+.services-list div i{
+	font-size: 40px;
+	margin-bottom: 30px;
+}
+
+.services-list div h2{
+	font-size: 30px;
+	font-weight: 500;
+	margin-bottom: 15px;
+}
+
+.services-list div a{
+	text-decoration: none;
+	color: whitesmoke;
+	font-size: 17px;
+	margin-top: 20px;
+	display: inline-block;
+}
+
+.services-list div:hover{
+	cursor: pointer;
+	background:#0033cc;
+	transform: translateY(-10px);
+}
+
+/*------portfolio section------*/
+#portfolio{
+	padding: 50px 0;
+}
+
+#portfolio .container h1{
+	font-size: 40px;
+	color: darkgrey;
+}
+
+.work-list{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	margin-top: 50px;
+}
+
+.work{
+	border-radius: 10px;
+	position: relative;
+	overflow: hidden;
+}
+
+.work img{
+	width: 50%;
+	height: 100%;
+	margin-left: 30%;
+	border-radius: 10px;
+	display: block;
+}
+
+
+.sub-content{
+	width: 50%;
+	height: 0;
+	margin-left: 30%;
+	background: linear-gradient(rgba(0, 0, 0, 0.6),#ff004f);
+	border-radius: 10px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	top: 0;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 0 40px;
+	text-align: center;
+	transition: height 0.5s;
+}
+
+.sub-content h3{
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+
+.sub-content a{
+	margin-top: 20px;
+	color: #ff004f;
+	font-size: 18px;
+	line-height: 60px;
+	background: white;
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+}
+
+.work:hover .sub-content{
+	height: 100%;
+	width: 50%;
+}
+
+/*-------Contact Section--------*/
+
+.column-left{
+	margin-left: 15%;
+}
+
+.column-left .sub-title{
+	font-size: 40px;
+	color: darkgrey;
+	margin-right: 30%;
+}
+
+.column-right{
+	margin-left: 50%;
+	margin-top: -9.5%;
+}
+
+.column-left p{
+	margin-top: 30px;
+}
+
+.column-left p i{
+	color: white;
+	margin-right: 15px;
+	font-size: 25px;
+}
+
+.social-icons{
+	margin-top: 25px;
+	font-size: 25px;
+	color: white;
+}
+
+.social-icons a{
+	text-decoration: none;
+	margin-right: 10px;
+	color: #ababab;
+	display: inline-block;
+
+}
+
+.column-left .button-click{
+	text-decoration: none;
+	color: white;
+	position: relative;
+	top:40px;
+	background: #ff3333;
+	font-size: 15px;
+	padding:15px 40px;
+	border-radius: 5px;
+}
+
+.button-click:hover{
+	background:rgba(255, 51, 51, 0.7) ;
+}
+
+.column-right form{
+	width: 100%;
+}
+
+form input,form textarea{
+	width: 75%;
+	border:0;
+	outline: none;
+	background: #262626;
+	padding: 15px;
+	color: white;
+	font-size: 18px;
+	border-radius: 6px;
+}
+
+.button-submit{
+	text-decoration: none;
+	color: white;
+	background: #ff3333;
+	font-size: 15px;
+	padding:13px 40px;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-left: 30%;
+	margin-top: 20px;
+}
+
+.button-submit:hover{
+	background:rgba(255, 51, 51, 0.7);
+}
+
+/*--------styles for small screen---------*/
+@media only screen and (max-width:600px){
+	.image-section{
+		height: 30vh;
+	}
+
+	.image-section img{
+		height: 100%;
+		margin-top: 30%;
+	}
+
+	.intro-text{
+		font-size: 16px;
+		margin-left: 60px;
+		margin-top: -10%;
+	}
+
+	.home{
+		right:72%;
+	}
+
+	.about{
+		right:60%;
+	}
+
+	.services{
+		right: 45%;
+	}
+
+	.portfolio{
+		right:30%;
+	}
+
+	.contact{
+		right: 15%;
+	}
+
+	.logo{
+		width: 15%;
+		height: 20vh;
+		margin-bottom: 20%;
+	}
+
+/*-------about me section------*/
+	#about{
+		margin-top: 8%;
+		margin-left: -20%;
+	}
+
+	.details h1{
+		font-size: 25px;
+		text-align: center;
+		margin:0 0 15px 40px;
+	}
+
+	.info{
+		font-size: 14px;
+		display: none;
+	}
+
+	.title-links:nth-child(1){
+		margin-left: 10%;
+	}
+
+	.contents ul li{
+		margin-left: -15%;
+	}
+
+/*-------services section------*/
+	.sub-title{
+		font-size: 25px;
+		margin-left: -40px;
+		margin-top: -50px;
+	}
+
+/*--------portfolio section-------*/
+	#portfolio .container h1{
+		font-size: 25px;
+		margin-top: 20px;
+	}
+
+	.work-list{
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		grid-gap: 100px;
+		margin-left: -70px;
+	}
+
+	.column{
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		grid-gap: 70px;
+	}
+
+	.column .column-left .sub-title{
+		font-size: 25px;
+		margin-top: 50px;
+	}
+
+	.column-left{
+		margin-left: 30%;
+	}
+
+	.column-right{
+		margin-left:20%;
+	}
+
+	.button-submit{
+		margin-left: 90px;
+	}
+}
+
+
+
+
